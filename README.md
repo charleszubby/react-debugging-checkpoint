@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+**Debugging Process**: Step-by-step guide on how to set up the app, identify issues, and use React Developer Tools.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Step 1: Set Up the Application
 
-## Available Scripts
+Install React Development Tool in browser extension.
+Ensure that the application runs in your local development environment at any PORT.
 
-In the project directory, you can run:
+### Step 2: Open React Developer Tools
 
-### `npm start`
+Open your browser's DevTools (usually via F12 or right-click and select "Inspect").
+Switch to the "React" tab to inspect the components of your application.
+This tool provides a tree view of all the components in the app, including their props and state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Step 3: Inspect Component Tree
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Inspect the component tree to get an overview of how your components are structured. Click on a component to check its state, props, and lifecycle hooks. Use the following features for detailed inspection:
 
-### `npm test`
+Props: Ensure that each component receives the correct props.
+State: Verify that the state reflects the correct values as you interact with the application.
+Hooks: If the component uses hooks, check if they are working as expected (e.g., useState, useEffect).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Step 4: Identify Common Issues
 
-### `npm run build`
+Incorrect State Values;
+Missing or Incorrect props;
+Unexpected Re-render;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Step 5: Performance Optimization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Check Component Re-renders;
+Optimization Techniques;
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 7: Verify Application Functionality
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ensure State and Props: Check that all components receive the correct state and props.
+Check Component Behavior: Ensure that all components render and function as expected.
+Recheck Performance: Ensure that performance optimizations are in place, and no unnecessary re-renders occur.
